@@ -89,7 +89,7 @@ router.get("/issued/by-user", (req, res) => {
  * Data:author,name,genre,price,publisher,id 
  */
 
- router.post("/", (req, res) => {
+router.post("/", (req, res) => {
     const { data } = req.body;
 
     if (!data) {
@@ -125,7 +125,7 @@ router.get("/issued/by-user", (req, res) => {
  * data : id, name, etc..
  */
 
- router.put("/:id", (req, res) => {
+router.put("/:id", (req, res) => {
     const { id } = req.params;
     const { data } = req.body;
 
@@ -211,4 +211,4 @@ router.get("/issued/with-fine", (req, res) => {
 
 
 module.exports = router;
- 
+
